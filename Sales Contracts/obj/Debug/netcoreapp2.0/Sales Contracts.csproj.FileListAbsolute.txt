@@ -1,0 +1,12 @@
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\bin\Debug\netcoreapp2.0\Sales Contracts.deps.json
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\bin\Debug\netcoreapp2.0\Sales Contracts.runtimeconfig.json
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\bin\Debug\netcoreapp2.0\Sales Contracts.runtimeconfig.dev.json
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\bin\Debug\netcoreapp2.0\Sales Contracts.dll
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\obj\Debug\netcoreapp2.0\Sales Contracts.csprojResolveAssemblyReference.cache
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\obj\Debug\netcoreapp2.0\Sales Contracts.csproj.CoreCompileInputs.cache
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\obj\Debug\netcoreapp2.0\Sales Contracts.AssemblyInfoInputs.cache
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\obj\Debug\netcoreapp2.0\Sales Contracts.AssemblyInfo.cs
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\bin\Debug\netcoreapp2.0\Sales Contracts.pdb
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\obj\Debug\netcoreapp2.0\Sales Contracts.dll
+c:\users\tomamine\source\repos\Sales Contracts\Sales Contracts\obj\Debug\netcoreapp2.0\Sales Contracts.pdb

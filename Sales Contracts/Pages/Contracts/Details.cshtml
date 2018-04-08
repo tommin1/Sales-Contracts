@@ -1,0 +1,205 @@
+﻿@page
+@model Sales_Contracts.Pages.Contractz.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Contract</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Contract_Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Contract_Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Contract_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Contract_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Primary_Contract_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Primary_Contract_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Agreement_Status_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Agreement_Status_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Agreement_Valid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Agreement_Valid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Account_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Account_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Contact_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Contact_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Post_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Post_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Country_Region_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Country_Region_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Contact_Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Contact_Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Phone_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Phone_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.E_Mail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.E_Mail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Responsible_Person_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Responsible_Person_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Contract_Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Contract_Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Open_ended_Contract)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Open_ended_Contract)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Starting_Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Starting_Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Ending_Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Ending_Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Currency_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Currency_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Credit_Limit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Credit_Limit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Prepaid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Prepaid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Payment_Terms_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Payment_Terms_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Auto_continuation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Auto_continuation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Contract_Duration)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Contract_Duration)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Bank_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Bank_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Bank_Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Bank_Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.Bank_Account_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.Bank_Account_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Contract.ETag)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Contract.ETag)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Contract.Contract_No">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

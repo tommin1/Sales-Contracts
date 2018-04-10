@@ -13477,11 +13477,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\tomamine\\source\\repos\\Sales Contracts\\Sales Contracts\\Sales Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\tomamine\\source\\repos\\Sales Contracts\\Sales Contracts\\Sales Contracts.csproj",
       "projectName": "Sales Contracts",
-      "projectPath": "c:\\users\\tomamine\\source\\repos\\Sales Contracts\\Sales Contracts\\Sales Contracts.csproj",
+      "projectPath": "C:\\Users\\tomamine\\source\\repos\\Sales Contracts\\Sales Contracts\\Sales Contracts.csproj",
       "packagesPath": "C:\\Users\\tomamine\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\tomamine\\source\\repos\\Sales Contracts\\Sales Contracts\\obj\\",
+      "outputPath": "C:\\Users\\tomamine\\source\\repos\\Sales Contracts\\Sales Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

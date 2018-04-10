@@ -44,7 +44,9 @@ namespace Sales_Contracts.Pages.Contractz
             return Page();
         }
 
+#pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         public async Task<IActionResult> OnPostAsync()
+#pragma warning restore CS1998 // Async method lacks 'await' operators and will run synchronously
         {
             _context.Credentials = CredentialCache.DefaultNetworkCredentials;
             if (!ModelState.IsValid)

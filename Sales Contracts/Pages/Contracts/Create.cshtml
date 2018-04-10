@@ -2,7 +2,7 @@
 @model Sales_Contracts.Pages.Contractz.CreateModel
 
 @{
-    ViewData["Title"] = "Create";
+	ViewData["Title"] = "Create";
 }
 
 <h2>Create</h2>
@@ -43,11 +43,24 @@
                 <input asp-for="Contract.Agreement_Valid" class="form-control" />
                 <span asp-validation-for="Contract.Agreement_Valid" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Contract.Account_No" class="control-label"></label>
-                <input asp-for="Contract.Account_No" class="form-control" />
-                <span asp-validation-for="Contract.Account_No" class="text-danger"></span>
-            </div>
+			<div class="form-group">
+				<label asp-for="Contract.Account_No" class="control-label"></label>
+				@{
+					List<SelectListItem> dropdownlistdata = new List<SelectListItem>();
+					Customer selected = new Customer();
+					foreach (var item in Model.Customer)
+					{
+						dropdownlistdata.Add(new SelectListItem
+						{
+							Text = item.No + " - " + item.Name,
+							Value = item.No.ToString(),
+							Selected = "select" == item.Name.ToString()
+						});
+					}
+				}
+				@Html.DropDownListFor(m => m.Contract.Account_No, dropdownlistdata, "--Select--", new {@class = "form-control" })
+				<span asp-validation-for="Contract.Account_No" class="text-danger"></span>
+			</div>
             <div class="form-group">
                 <label asp-for="Contract.Contact_No" class="control-label"></label>
                 <input asp-for="Contract.Contact_No" class="form-control" />

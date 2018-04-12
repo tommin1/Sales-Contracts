@@ -1,0 +1,100 @@
+﻿@page
+@model Sales_Contracts.Pages.Contract_Company.EditCompanyInfoModel
+
+@{
+    ViewData["Title"] = "EditCompanyInfo";
+}
+
+<h2>EditCompanyInfo</h2>
+
+<h4>ContractCompany</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Representative" class="control-label"></label>
+                <input asp-for="ContractCompany.Representative" class="form-control" />
+                <span asp-validation-for="ContractCompany.Representative" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Name" class="control-label"></label>
+                <input asp-for="ContractCompany.Name" class="form-control" />
+                <span asp-validation-for="ContractCompany.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Registration_No" class="control-label"></label>
+                <input asp-for="ContractCompany.Registration_No" class="form-control" />
+                <span asp-validation-for="ContractCompany.Registration_No" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.VAT_Registration_No" class="control-label"></label>
+                <input asp-for="ContractCompany.VAT_Registration_No" class="form-control" />
+                <span asp-validation-for="ContractCompany.VAT_Registration_No" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Bank_Account_No" class="control-label"></label>
+                <input asp-for="ContractCompany.Bank_Account_No" class="form-control" />
+                <span asp-validation-for="ContractCompany.Bank_Account_No" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Chief_Accountant" class="control-label"></label>
+                <input asp-for="ContractCompany.Chief_Accountant" class="form-control" />
+                <span asp-validation-for="ContractCompany.Chief_Accountant" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.EMail" class="control-label"></label>
+                <input asp-for="ContractCompany.EMail" class="form-control" />
+                <span asp-validation-for="ContractCompany.EMail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Address" class="control-label"></label>
+                <input asp-for="ContractCompany.Address" class="form-control" />
+                <span asp-validation-for="ContractCompany.Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Post_Code" class="control-label"></label>
+                <input asp-for="ContractCompany.Post_Code" class="form-control" />
+                <span asp-validation-for="ContractCompany.Post_Code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.City" class="control-label"></label>
+                <input asp-for="ContractCompany.City" class="form-control" />
+                <span asp-validation-for="ContractCompany.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Phone_No" class="control-label"></label>
+                <input asp-for="ContractCompany.Phone_No" class="form-control" />
+                <span asp-validation-for="ContractCompany.Phone_No" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Bank_Name" class="control-label"></label>
+                <input asp-for="ContractCompany.Bank_Name" class="form-control" />
+                <span asp-validation-for="ContractCompany.Bank_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Additional_Field_1" class="control-label"></label>
+                <input asp-for="ContractCompany.Additional_Field_1" class="form-control" />
+                <span asp-validation-for="ContractCompany.Additional_Field_1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Additional_Field_2" class="control-label"></label>
+                <input asp-for="ContractCompany.Additional_Field_2" class="form-control" />
+                <span asp-validation-for="ContractCompany.Additional_Field_2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContractCompany.Additional_Field_3" class="control-label"></label>
+                <input asp-for="ContractCompany.Additional_Field_3" class="form-control" />
+                <span asp-validation-for="ContractCompany.Additional_Field_3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

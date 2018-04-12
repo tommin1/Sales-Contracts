@@ -21,3 +21,4 @@ C:\Users\tomamine\Desktop\Sales-Contracts-master\Sales Contracts\obj\Debug\netco
 C:\Users\tomamine\Desktop\Sales-Contracts-master\Sales Contracts\obj\Debug\netcoreapp2.0\Sales Contracts.AssemblyInfo.cs
 C:\Users\tomamine\Desktop\Sales-Contracts-master\Sales Contracts\obj\Debug\netcoreapp2.0\Sales Contracts.dll
 C:\Users\tomamine\Desktop\Sales-Contracts-master\Sales Contracts\obj\Debug\netcoreapp2.0\Sales Contracts.pdb
+C:\Users\tomamine\source\repos\Sales Contracts\Sales Contracts\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

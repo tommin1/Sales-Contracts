@@ -19,6 +19,7 @@ namespace Sales_Contracts.Pages.Contractz
 
         [BindProperty]
         public Contract Contract { get; set; }
+        public Contract Contract2 { get; set; }
 
         public async Task<IActionResult> OnGetAsync(string id)
         {
@@ -54,25 +55,20 @@ namespace Sales_Contracts.Pages.Contractz
                 return Page();
             }
 
-            _context.AttachTo("Contracts", Contract);
-            _context.ChangeState(Contract, EntityStates.Modified);
+            var contract = _context.Contract;
 
-            try
-            {
-                _context.BeginSaveChanges(adoSave_RLMember, Contract);
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ContractExists(Contract.Contract_No))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            DataServiceQuery<Contract> query = contract;
 
+            TaskFactory<IEnumerable<Contract>> taskFactory = new TaskFactory<IEnumerable<Contract>>();
+            var kontrakt = await taskFactory.FromAsync(query.BeginExecute(null, null), iar => query.EndExecute(iar));
+
+            Contract2 = kontrakt.FirstOrDefault();
+
+            _context.DeleteObject(Contract2);
+            _context.BeginSaveChanges(adoSave_RLMember, Contract2);
+
+            _context.AddToContract(Contract);
+            _context.BeginSaveChanges(adoSave_RLMember, Contract);
             return RedirectToPage("./Index");
         }
 

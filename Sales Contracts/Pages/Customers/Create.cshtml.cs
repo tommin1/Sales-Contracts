@@ -1,34 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.Services.Client;
 using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using NAVN;
 
-namespace Sales_Contracts.Pages.Contractz
+namespace Sales_Contracts.Pages.Customers
 {
     public class CreateModel : PageModel
     {
         NAV _context = new NAV(new Uri("http://nb-marven.softera.lt:7048/DynamicsNAV100/OData/Company('CRONUS%20International%20Ltd.')"));
 
         [BindProperty]
-        public Contract Contract { get; set; }
-
-        public IEnumerable<Customer> Customer { get; set; }
+        public Customer Customer { get; set; }
 
         public async Task<IActionResult> OnGetAsync()
         {
-            _context.Credentials = CredentialCache.DefaultNetworkCredentials;
-            var customers = _context.Customer;
-
-            DataServiceQuery<Customer> query = customers;
-
-            TaskFactory<IEnumerable<Customer>> taskFactory = new TaskFactory<IEnumerable<Customer>>();
-            Customer = await taskFactory.FromAsync(query.BeginExecute(null, null), iar => query.EndExecute(iar));
-            Customer = Customer;
-
             return Page();
         }
 
@@ -43,8 +30,8 @@ namespace Sales_Contracts.Pages.Contractz
                 return Page();
             }
 
-            _context.AddToContract(Contract);
-            _context.BeginSaveChanges(adoSave_RLMember, Contract);
+            _context.AddToCustomer(Customer);
+            _context.BeginSaveChanges(adoSave_RLMember, Customer);
 
             return RedirectToPage("./Index");
         }

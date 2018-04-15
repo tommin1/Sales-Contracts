@@ -1,0 +1,529 @@
+﻿@page
+@model Sales_Contracts.Pages.Customers.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Search_Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Search_Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.IC_Partner_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.IC_Partner_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Balance_LCY)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Balance_LCY)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Balance_Due_LCY)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Balance_Due_LCY)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Credit_Limit_LCY)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Credit_Limit_LCY)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Blocked)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Blocked)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Salesperson_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Salesperson_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Responsibility_Center)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Responsibility_Center)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Service_Zone_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Service_Zone_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.BlockedCustomer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.BlockedCustomer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Document_Sending_Profile)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Document_Sending_Profile)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.TotalSales2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.TotalSales2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.CustSalesLCY_CustProfit_AdjmtCostLCY)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.CustSalesLCY_CustProfit_AdjmtCostLCY)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.AdjCustProfit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.AdjCustProfit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.AdjProfitPct)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.AdjProfitPct)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Last_Date_Modified)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Last_Date_Modified)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Address_2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Address_2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Post_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Post_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Country_Region_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Country_Region_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.ShowMap)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.ShowMap)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Primary_Contact_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Primary_Contact_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.ContactName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.ContactName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Phone_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Phone_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.E_Mail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.E_Mail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Fax_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Fax_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Home_Page)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Home_Page)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Language_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Language_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Bill_to_Customer_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Bill_to_Customer_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.VAT_Registration_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.VAT_Registration_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.GLN)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.GLN)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Copy_Sell_to_Addr_to_Qte_From)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Copy_Sell_to_Addr_to_Qte_From)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Invoice_Copies)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Invoice_Copies)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Gen_Bus_Posting_Group)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Gen_Bus_Posting_Group)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.VAT_Bus_Posting_Group)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.VAT_Bus_Posting_Group)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Customer_Posting_Group)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Customer_Posting_Group)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Currency_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Currency_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Customer_Price_Group)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Customer_Price_Group)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Customer_Disc_Group)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Customer_Disc_Group)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Allow_Line_Disc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Allow_Line_Disc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Invoice_Disc_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Invoice_Disc_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Prices_Including_VAT)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Prices_Including_VAT)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Prepayment_Percent)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Prepayment_Percent)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Application_Method)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Application_Method)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Partner_Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Partner_Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Payment_Terms_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Payment_Terms_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Payment_Method_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Payment_Method_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Reminder_Terms_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Reminder_Terms_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Fin_Charge_Terms_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Fin_Charge_Terms_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Cash_Flow_Payment_Terms_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Cash_Flow_Payment_Terms_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Print_Statements)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Print_Statements)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Last_Statement_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Last_Statement_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Block_Payment_Tolerance)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Block_Payment_Tolerance)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Preferred_Bank_Account_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Preferred_Bank_Account_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Location_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Location_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Combine_Shipments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Combine_Shipments)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Reserve)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Reserve)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Shipping_Advice)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Shipping_Advice)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Shipment_Method_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Shipment_Method_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Shipping_Agent_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Shipping_Agent_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Shipping_Agent_Service_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Shipping_Agent_Service_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Shipping_Time)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Shipping_Time)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Base_Calendar_Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Base_Calendar_Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Customized_Calendar)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Customized_Calendar)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.GetMoneyOwedExpected)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.GetMoneyOwedExpected)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.TotalMoneyOwed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.TotalMoneyOwed)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.CalcCreditLimitLCYExpendedPct)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.CalcCreditLimitLCYExpendedPct)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Balance_Due)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Balance_Due)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Payments_LCY)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Payments_LCY)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.CustomerMgt_AvgDaysToPay_No)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.CustomerMgt_AvgDaysToPay_No)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.DaysPaidPastDueDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.DaysPaidPastDueDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.GetAmountOnPostedInvoices)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.GetAmountOnPostedInvoices)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.GetAmountOnCrMemo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.GetAmountOnCrMemo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.GetAmountOnOutstandingInvoices)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.GetAmountOnOutstandingInvoices)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.GetAmountOnOutstandingCrMemos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.GetAmountOnOutstandingCrMemos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Totals)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Totals)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.CustInvDiscAmountLCY)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.CustInvDiscAmountLCY)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Global_Dimension_1_Filter)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Global_Dimension_1_Filter)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Global_Dimension_2_Filter)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Global_Dimension_2_Filter)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Currency_Filter)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Currency_Filter)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.Date_Filter)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.Date_Filter)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer.ETag)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Customer.ETag)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Customer.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

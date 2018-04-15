@@ -2467,6 +2467,7 @@ namespace NAVN
     [global::System.Data.Services.Common.DataServiceKeyAttribute("Representative")]
     public partial class ContractCompany : global::System.ComponentModel.INotifyPropertyChanged
     {
+        public int ID { get; set; }
         /// <summary>
         /// Create a new ContractCompany object.
         /// </summary>
@@ -3498,6 +3499,7 @@ namespace NAVN
     [global::System.Data.Services.Common.DataServiceKeyAttribute("No")]
     public partial class Customer : global::System.ComponentModel.INotifyPropertyChanged
     {
+        public int ID { get; set; }
         /// <summary>
         /// Create a new Customer object.
         /// </summary>
@@ -5467,6 +5469,7 @@ namespace NAVN
     [global::System.Data.Services.Common.DataServiceKeyAttribute("Code", "Currency_Code", "Line_Type", "Loaded_Customer_No", "Loaded_Disc_Group", "Loaded_Item_No", "Loaded_Price_Group", "Minimum_Quantity", "Sales_Code", "Sales_Type", "Starting_Date", "Type", "Unit_of_Measure_Code", "Variant_Code")]
     public partial class CustomerPriceAndLineDisc : global::System.ComponentModel.INotifyPropertyChanged
     {
+        public int ID { get; set; }
         /// <summary>
         /// Create a new CustomerPriceAndLineDisc object.
         /// </summary>
@@ -6009,6 +6012,7 @@ namespace NAVN
     [global::System.Data.Services.Common.DataServiceKeyAttribute("No")]
     public partial class Customers : global::System.ComponentModel.INotifyPropertyChanged
     {
+        public int ID { get; set; }
         /// <summary>
         /// Create a new Customers object.
         /// </summary>

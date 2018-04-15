@@ -24,5 +24,7 @@ namespace Sales_Contracts.Data
         }
 
         public DbSet<NAVN.ContractCompany> ContractCompany { get; set; }
+
+        public DbSet<NAVN.Customer> Customer { get; set; }
     }
 }

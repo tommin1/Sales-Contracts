@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using NAVN;
+using Sales_Contracts.Data;
 
 namespace Sales_Contracts.Data
 {
@@ -12,6 +13,10 @@ namespace Sales_Contracts.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
+        {
+        }
+
+        public ApplicationDbContext()
         {
         }
 
@@ -26,5 +31,7 @@ namespace Sales_Contracts.Data
         public DbSet<NAVN.ContractCompany> ContractCompany { get; set; }
 
         public DbSet<NAVN.Customer> Customer { get; set; }
+
+        public DbSet<Sales_Contracts.Data.ApplicationUser> ApplicationUser { get; set; }
     }
 }

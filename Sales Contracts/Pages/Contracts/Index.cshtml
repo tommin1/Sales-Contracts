@@ -2,112 +2,73 @@
 @model Sales_Contracts.Pages.Contractz.IndexModel
 
 @{
-	ViewData["Title"] = "Index";
+	ViewData["Title"] = "Contracts";
 }
 
-<h2>Index</h2>
+<h2>Contracts</h2>
 
 <p>
     <a asp-page="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
-        <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Contract_Type)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Contract_No)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Primary_Contract_No)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Description)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Agreement_Status_Code)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Agreement_Valid)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Account_No)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Contact_No)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Address)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Post_Code)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).City)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Country_Region_Code)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Contact_Name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Phone_No)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).E_Mail)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Responsible_Person_Code)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Contract_Date)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Open_ended_Contract)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Starting_Date)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Ending_Date)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Currency_Code)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Credit_Limit)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Prepaid)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Payment_Terms_Code)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Auto_continuation)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Contract_Duration)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Bank_No)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Bank_Name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).Bank_Account_No)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Contract.ElementAt(0).ETag)
-                </th>
-            <th></th>
-        </tr>
+		<tr>
+			<th>
+				Contract Type
+			</th>
+			<th>
+				Contract No.
+			</th>
+			<th>
+				Primary Contract No.
+			</th>
+			<th>
+				Description
+			</th>
+			<th>
+				Agreement Status Code
+			</th>
+			<th>
+				Agreement Valid
+			</th>
+			<th>
+				Account No.
+			</th>
+			<th>
+				Contact No.
+			</th>
+			<th>
+				Name
+			</th>
+			<th>
+				Contact Name
+			</th>
+			<th>
+				Responsible Person Code
+			</th>
+			<th>
+				Contract Date
+			</th>
+			<th>
+				Open-ended Contract
+			</th>
+			<th>
+				Starting Date
+			</th>
+			<th>
+				Ending Date
+			</th>
+			<th>
+				Bank No.
+			</th>
+			<th>
+				Bank Name
+			</th>
+			<th>
+				Bank Account No.
+			</th>
+			<th></th>
+		</tr>
     </thead>
     <tbody>
 @foreach (var item in Model.Contract) {
@@ -140,25 +101,7 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Post_Code)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.City)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Country_Region_Code)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Contact_Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone_No)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.E_Mail)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Responsible_Person_Code)
@@ -176,24 +119,6 @@
                 @Html.DisplayFor(modelItem => item.Ending_Date)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Currency_Code)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Credit_Limit)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Prepaid)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Payment_Terms_Code)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Auto_continuation)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contract_Duration)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Bank_No)
             </td>
             <td>
@@ -201,9 +126,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Bank_Account_No)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ETag)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Contract_No">Edit</a> |

@@ -26,13 +26,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-page="/Index" class="navbar-brand">Sales_Contracts</a>
+                <a asp-page="/Index" class="navbar-brand">Home</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-page="/Contracts/Index">Contracts</a></li>
-                    <li><a asp-page="/CompanyInfo/Index">Company</a></li>
-                    <li><a asp-page="/Customers/Index">Customers</a></li>
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
             </div>
@@ -42,7 +39,6 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018</p>
         </footer>
     </div>
 

@@ -9,5 +9,7 @@ namespace Sales_Contracts.Data
     // Add profile data for application users by adding properties to the ApplicationUser class
     public class ApplicationUser : IdentityUser
     {
+        public String CustomerNo { get; set; }
+        public Boolean admin { get; set; }
     }
 }
